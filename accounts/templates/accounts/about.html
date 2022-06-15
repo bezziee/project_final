@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/stylecontact.css' %}">
+</head>
+<body>
+    <section id="about-info" class="bg-light py-3">
+       <div class="container">
+           <div class="info-left">
+               <h1 class="l-heading"> <span class="text-primary">About</span> our Hotel </h1>
+               <p>This is a hotel management system for hotels that facilitates the management of
+                   <br>hotel operations and functions both for customers and the hotel employees at General</p>
+
+               <p>Register to our website to get the full functions </p>
+           </div>
+           <div class="info-right">
+               <img src="{% static 'images/bfy1.jpg' %}" alt="Hotel">
+           </div>
+       </div>
+   </section>
+   <div class="clr"></div>
+
+   <section id="testimonials" class="py-3">
+    <div class="container">
+       <h2 class="l-heading ">What our guest says</h2>
+       <div class="testimonial bg-primary">
+           <img src="{% static 'images/fev.jpg' %}" alt="bezi">
+           <p>Feven Tamiru is the director General and manager of our Hotel , With handson experience on Hotel management , team leading and tested leadership .</p>
+
+       </div>
+
+       <div class="testimonial bg-primary">
+         <img src="{% static 'images/bez.jpg' %}" alt="Jen">
+         <p> Bezawit Gidey is one of the few Outstanding girls in the market with great success on planning and coordinating Administrative procedures and systems and making ways to make evry one happy on your stay at the hotel </p>
+       </div>
+        <div class="testimonial bg-primary">
+         <img src="{% static 'images/yo.jpg' %}" alt="Jen">
+         <p> Yordanos Mesfin is Our Customer Service Director with quality's such as valuing Customer's time , having pleasant attitude and providing valuable and knowledgeable resources  </p>
+       </div>
+   </div>
+  </section>
+</body>
+</html>

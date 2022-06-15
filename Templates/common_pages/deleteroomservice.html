@@ -1,0 +1,13 @@
+<div class="row justify-content-center m-5">
+    <div class="card border-danger shadow-lg w-75">
+        <div class="card-body">
+            <p>Are you sure you want to delete This Room Service : ?</p> <br>
+            <p>Room service by Guest: {{ booking.guest.user.first_name }} {{ booking.guest.user.last_name }}</p><br>
+            <form action="{% url 'deleteservices'  %}" method="post">
+                {% csrf_token %}
+                <a class="btn btn-info" href="#">Cancel</a>
+                <input class="btn btn-danger" type="submit" value="Confirm">
+            </form>
+        </div>
+    </div>
+</div>
